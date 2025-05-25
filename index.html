@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Clara - Bem-estar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Maria Clara</h1>
+                <p>Esteticista</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="slideshow">
+            <div class="slide active" style="background-image: url('pedrasperna.jpeg')"></div>
+            <div class="slide" style="background-image: url('pedrasquentes.jpeg')"></div>
+            <div class="slide" style="background-image: url('image.png')"></div>
+            <div class="slide" style="background-image: url('image copy.png')"></div>
+        </div>
+        <div class="container">
+            <h2>Bem-estar e relaxamento </h2>
+            <p>Agende sua sessão e experimente os benefícios de uma vida mais equilibrada</p>
+            <a href="https://wa.me/5581986688718?text=Olá,%20vim%20pelo%20site.%20Gostaria%20de%20agendar%20uma%20massagem." class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <img src="64ef3d8c-d009-446f-b5fb-c92c80b67a64.jpeg" alt="Maria Clara - Massoterapeuta">
+                <div class="about-text">
+                    <p>Sou Maria Clara, massoterapeuta profissional com formação em diversas técnicas de massagem. Minha missão é proporcionar bem-estar e alívio das tensões do dia a dia através de técnicas especializadas.</p>
+                    <p>Com anos de experiência, ofereço tratamentos personalizados para cada necessidade, sempre com profissionalismo e cuidado.</p>
+                    <div class="instagram-link">
+                        <a href="https://instagram.com/mrclaraestetica" target="_blank">
+                            <i class="fab fa-instagram"></i> @mrclaraestetica
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card" onclick="agendarServico('Drenagem Linfática')">
+                    <h3>Drenagem Linfática</h3>
+                    <p class="duration">1 hora</p>
+                    <p class="price">R$ 90,00</p>
+                    <p>Redução de inchaços e melhora na circulação.</p>
+                </div>
+                <div class="service-card" onclick="agendarServico('Massagem Redutora')">
+                    <h3>Massagem Redutora</h3>
+                    <p class="duration">1 hora</p>
+                    <p class="price">R$ 90,00</p>
+                    <p>Atua na redução de medidas e melhora da flacidez.</p>
+                </div>
+                <div class="service-card" onclick="agendarServico('Massagem Relaxante com Pedras')">
+                    <h3>Massagem Relaxante com Pedras</h3>
+                    <p class="duration">1 hora e 30 minutos</p>
+                    <p class="price">R$ 140,00</p>
+                    <p>Combina técnicas de massagem com pedras quentes para relaxamento profundo.</p>
+                </div>
+                <div class="service-card" onclick="agendarServico('Massagem Relaxante sem Pedras')">
+                    <h3>Massagem Relaxante sem Pedras</h3>
+                    <p class="duration">1 hora e 10 minutos</p>
+                    <p class="price">R$ 120,00</p>
+                    <p>Técnicas suaves para alívio do estresse e tensão muscular.</p>
+                </div>
+                <div class="service-card" onclick="agendarServico('Massagem com Ventosa')">
+                    <h3>Massagem com Ventosa</h3>
+                    <p class="duration">1 hora e 10 minutos</p>
+                    <p class="price">R$ 110,00</p>
+                    <p>Melhora a circulação e alivia dores musculares.</p>
+                </div>
+                <div class="service-card" onclick="agendarServico('Liberação Miofascial Local')">
+                    <h3>Liberação Miofascial Local</h3>
+                    <p class="duration">40 minutos</p>
+                    <p class="price">R$ 60,00</p>
+                    <p>Técnica para alívio de tensões e dores específicas.</p>
+                </div>
+                <div class="service-card" onclick="agendarServico('Drenagem Facial')">
+                    <h3>Drenagem Facial</h3>
+                    <p class="duration">30 minutos</p>
+                    <p class="price">R$ 40,00</p>
+                    <p>Redução de inchaço facial e melhora da circulação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p><i class="fas fa-phone"></i> (81) 9 8668-8718</p>
+                    <p><i class="fas fa-envelope"></i> maria.clara@massoterapia.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Recife, PE</p>
+                    
+                    <div class="social-links">
+                        <a href="https://instagram.com/mrclaraestetica" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="form-contato" action="https://formsubmit.co/victormatheus5875@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                        <input type="tel" name="telefone" placeholder="Seu telefone (opcional)">
+                        <select name="servico_interesse" required>
+                            <option value="" disabled selected>Selecione um serviço</option>
+                            <option value="Drenagem Linfática">Drenagem Linfática</option>
+                            <option value="Massagem Redutora">Massagem Redutora</option>
+                            <option value="Massagem Relaxante com Pedras">Massagem Relaxante com Pedras</option>
+                            <option value="Massagem Relaxante sem Pedras">Massagem Relaxante sem Pedras</option>
+                            <option value="Massagem com Ventosa">Massagem com Ventosa</option>
+                            <option value="Liberação Miofascial Local">Liberação Miofascial Local</option>
+                            <option value="Drenagem Facial">Drenagem Facial</option>
+                            <option value="Outro">Outro (especifique na mensagem)</option>
+                        </select>
+                        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-final">
+        <div class="container">
+            <h2>Pronto para Transformar seu Bem-Estar?</h2>
+            <p>Agende sua sessão agora mesmo e dê o primeiro passo para uma vida mais relaxada e equilibrada</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/5581986688718?text=Olá,%20vim%20pelo%20site.%20Gostaria%20de%20agendar%20uma%20massagem." class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+                </a>
+                <a href="tel:81986688718" class="btn-phone">
+                    <i class="fas fa-phone"></i> Ligar Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Maria Clara - Esteticista. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5581986688718?text=Olá,%20vim%20pelo%20site.%20Gostaria%20de%20agendar%20uma%20massagem." target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <div class="phone-float">
+        <a href="tel:81986688718">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

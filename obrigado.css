@@ -1,0 +1,93 @@
+/* Thank You Page Styles */
+.thank-you {
+    padding: 100px 0;
+    text-align: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.thank-you-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.thank-you i.fas {
+    font-size: 5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.thank-you h2 {
+    color: #6a4c93;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.thank-you p {
+    margin-bottom: 30px;
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.thank-you .btn {
+    display: inline-block;
+    background-color: #6a4c93;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 10px;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.thank-you .btn:hover {
+    background-color: #8e6c88;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .thank-you {
+        padding: 60px 20px;
+    }
+    
+    .thank-you-content {
+        padding: 30px 20px;
+    }
+    
+    .thank-you h2 {
+        font-size: 1.8rem;
+    }
+    
+    .thank-you i.fas {
+        font-size: 4rem;
+    }
+    
+    .thank-you .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .thank-you-content {
+        padding: 25px 15px;
+    }
+    
+    .thank-you h2 {
+        font-size: 1.6rem;
+    }
+    
+    .thank-you p {
+        font-size: 1rem;
+    }
+}
